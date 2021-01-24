@@ -1,3 +1,13 @@
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable eol-last */
+/* eslint-disable quotes */
+/* eslint-disable eqeqeq */
+/* eslint-disable no-redeclare */
+/* eslint-disable new-cap */
+/* eslint-disable indent */
+/* eslint-disable no-unused-vars */
+
+
 'use strict';
 function togglesidebar() {
     document.getElementById('side-bar').classList.toggle('active');
@@ -168,4 +178,4 @@ function displayNone() {
     for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-}
+} 
