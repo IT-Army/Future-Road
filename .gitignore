@@ -8,8 +8,6 @@ logs
 # Optional eslint cache
 .eslintcache
 
-
-
 # Created by https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode
 
 ### Linux ###
