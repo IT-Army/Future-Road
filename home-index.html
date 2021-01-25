@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Future Road</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
+
 <body>
+    <header>
+       <div id="header-part1">
+            <div id="sliding-text" class="navi" >
+
+                <h1 id="logo1" style="color:rgb(255, 158, 242)">STUDENT</h1><br>
+                <h1 id="logo2" style="color: rgb(109, 109, 109)">FUTURE</h1><br>
+                <h1 id="logo3" style="color:rgb(103, 245, 133)">ROAD</h1><br>
+
+            </div>
+   
+                <nav class="navi">
+                <ul >
+                    <li>Home</li>
+                    <li>Short Test</li>
+                    <li>Majors</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>
+            </div>
+
+        <div id="header-video">
+            <video src="videos/What will it be like to study at a university_.mp4" autoplay="true" loop="true"
+                muted="true"></video>
+        </div>
+        <div id="header-overlay"></div>
+        <div id="header-text">
+            <h1>Ahmad</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, quibusdam officiis? Atque dicta
+                excepturi ex quas? Ipsum tenetur dicta veniam magnam voluptatum, ratione quaerat cum natus commodi
+                pariatur, eius autem!</p>
+        </div>
+    </header>
+    <main>
+        
+
+
+        <div class="more-stuff-grid">
+            <div id="item1">
+            <figure class="swing" >
+                <img src="images/major.jpg" alt="" class="side-in from-left" id="moveimg1">
+            </figure>
+                <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aspernatur explicabo consequatur alias natus itaque suscipit. Aliquid libero ipsum ex non distinctio.
+                    Laudantium pariatur, reprehenderit quidem unde aliquam aperiam autem molestiae!</p>
+            
+        </div>
+        <div id="item2">
+            <figure class="swing" >
+                <img src="images/exam-paper.jpg" alt="" class="" class="side-in from-right" id="moveimg">
+            </figure>
+            <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aspernatur explicabo consequatur alias natus itaque suscipit. Aliquid libero ipsum ex non distinctio.
+                Laudantium pariatur, reprehenderit quidem unde aliquam aperiam autem molestiae!</p>
+        </div>
+        
+        </div>
+
+<div class="mychart">
+    <canvas class="mychart" id="mychart"></canvas>
+</div>
+
+
+    </main>
     
+    
+    <script src="js/home-app.js"></script>
+    <footer>
+        <p>Copyright © 2010 by Wily E. Coyote
+            All rights reserved</p>
+    </footer>
 </body>
+
 </html>
