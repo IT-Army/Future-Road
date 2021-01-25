@@ -8,55 +8,43 @@ body{
     overflow-x: hidden;
     
 }
+::-webkit-scrollbar
+{
+    width:12px
+}
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(black,rgb(103, 245, 133));
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: linear-gradient(black,rgb(255, 158, 242));
+}
+#header-part1{
+    border-bottom: 1px solid rgb(109, 109, 109);
+}
+.navi{
+    display: inline-block;
+    position: relative;
+}
+#sliding-text{
+    margin: 20px 20px 20px 20px ;
+}
+.navi li{
+    display: inline-block;
+    color: rgb(109, 109, 109);
+    font-size: 30px;
+    margin: 80px 80px 80px 80px;
+}
+ul{
+    transform: translateY(-20%)
+}
 
-#stiky-bar{
-    position:fixed ;
-    background-color: black;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    z-index: 2;
-}
-#stiky-bar h1{
-    color: white;
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-}
-#side-bar{
-position: fixed;
-width: 200px;
-height: 100%;
-transform: translateY(-42px);
-background-color: black;
-left:  -200px;
-transition: all 0.5s linear;
-z-index: 2;
-}
-#side-bar.active{
-    left: 0px;
-}
-#side-bar ul li{
-    color: white;
-    list-style: none;
-    padding: 15px 10px;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
-}
-#side-bar .toggle-btn{
-    position: absolute;
-    left: 230px;
-    top: 5px;
-}
-#side-bar .toggle-btn span{
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color:white;
-    margin: 5px 0px;
-    border-radius: 30%;
-}
+
 #header-video{
     position: absolute;
-    top: 40px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -74,7 +62,7 @@ z-index: 2;
     height: 100vh;
     width: 100vw;
     position: absolute;
-    top: 40px;
+    top: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.623);
     z-index: -1;
@@ -82,87 +70,32 @@ z-index: 2;
 #header-text {
     z-index: 2;
     display: block;
-    transform: translateY(50vh);
+    transform: translateY(30vh);
     text-align: center;
 }
 #header-text h1,p{
     max-width: 50%;
     margin: auto;
 }
-#sliding-text{
-    display: block;
-    position: relative;
-    transform: translateY(105vh);
-    text-align: center;
-}
-#sliding-text h1{
-    font-family: 'Dancing Script', cursive;
-}
-#stiky{
-    display: flex;
-}
+
 #logo1{
     position: relative;
     margin: 0;
     padding: 0;
     display: inline-block;
+    text-shadow: 10px 10px 10px rgb(255, 158, 242);
     font-size: 3em;
-    transition: 0.5s;
-    transform-origin: left;
-transform: scaleX(0);
+    
+
 }
-#logo1[data-scroll="out"]
-{
-    transform: scaleX(1);
-}
-#logo1::before{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background:rgb(255, 158, 242);
-transform-origin:right;
-transition: 0.5s;
-border-radius: 20%;
-}
-#logo1[data-scroll="out"]::before
-{
-    transform: scaleX(0);
-    transition-delay: 0.5s;
-}
+
 #logo2{
     position: relative;
     margin: 0;
     padding: 0;
     display: inline-block;
+    text-shadow: 10px 10px 10px rgb(53, 53, 53);
     font-size: 3em;
-    transition: 0.5s;
-    transform-origin: left;
-transform: scaleX(0);
-
-}
-#logo2[data-scroll="out"]
-{
-    transform: scaleX(1);
-}
-#logo2::before{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background:rgb(53, 53, 53);
-transform-origin: center;
-transition: 0.5s;
-border-radius: 20%;
-}
-#logo2[data-scroll="out"]::before
-{
-    transform: scaleX(0);
-    transition-delay: 0.5s;
 }
 
 #logo3{
@@ -170,66 +103,31 @@ border-radius: 20%;
     margin: 0;
     padding: 0;
     display: inline-block;
+    text-shadow: 10px 10px 10px rgb(103, 245, 133);
     font-size: 3em;
-    transition: 0.5s;
-    transform-origin: left;
-transform: scaleX(0);
-}
-#logo3[data-scroll="out"]
-{
-    transform: scaleX(1);
-}
-#logo3::before{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background:rgb(103, 245, 133);
-transform-origin: left;
-transition: 0.5s;
-border-radius: 20%;
-}
-#logo3[data-scroll="out"]::before
-{
-    transform: scaleX(0);
-    transition-delay: 0.5s;
 }
 .more-stuff-grid{
-    background-color: #f4f4f4;
-    padding: 4em 0;
+    background: repeating-linear-gradient(to top right,rgba(255, 158, 242, 0.404),rgba(53, 53, 53, 0.404),rgba(103, 245, 134, 0.404));
+    height: 700px;
     display: grid;
-    grid-gap: 2em;
-    align-items: center;
-    grid-template-columns: minmax(1em,1fr) repeat(2,1em,1fr);
-    transform: translateY(110vh);
+
+    transform: translateY(63%);
 }
+#item1{
+    transform: translate(70px,70px);
+}
+#item2{
+    transform: translate(70px,50px);
+}
+.more-stuff-grid p{
+    margin-top: 60px;
+    margin-left: 250px;
+
+}
+
 .more-stuff-grid img{
     height:200px;
     width: 200px;
-}
-
-.from-left{
-    grid-column: 2/3;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.from-right{
-    grid-column: 3/4;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#movep{
-    transform: translateX(45%);
-    
-}
-#movep1{
-    transform: translateX(50%);
-    
 }
 .swing {
     animation: swing ease-in-out 1s infinite alternate;
@@ -278,9 +176,13 @@ footer{
     padding: 0;
     transform: translateY(140vh);
     text-align: center;
+    box-shadow: 0 0 10px;
 }
 footer p{
     color:white;
-   
+    text-shadow: 0 0 10px white;
     margin-top: 20px;
+}
+canvas{
+    box-shadow: 10px 10px 10px gainsboro;
 }

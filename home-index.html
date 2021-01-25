@@ -13,23 +13,25 @@
 
 <body>
     <header>
-        <div id="stiky-bar">
-            <h1>SFR</h1>
-            <div id="side-bar">
-                <div class="toggle-btn" onclick="togglesidebar()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul>
+       <div id="header-part1">
+            <div id="sliding-text" class="navi" >
+
+                <h1 id="logo1" style="color:rgb(255, 158, 242)">STUDENT</h1><br>
+                <h1 id="logo2" style="color: rgb(109, 109, 109)">FUTURE</h1><br>
+                <h1 id="logo3" style="color:rgb(103, 245, 133)">ROAD</h1><br>
+
+            </div>
+   
+                <nav class="navi">
+                <ul >
                     <li>Home</li>
                     <li>Short Test</li>
                     <li>Majors</li>
                     <li>About Us</li>
                 </ul>
-
+            </nav>
             </div>
-        </div>
+
         <div id="header-video">
             <video src="videos/What will it be like to study at a university_.mp4" autoplay="true" loop="true"
                 muted="true"></video>
@@ -43,32 +45,28 @@
         </div>
     </header>
     <main>
-        <section class="stiky">
-            <div id="sliding-text">
-
-                <h1 id="logo1" style="color:rgb(255, 158, 242)">STUDENT</h1><br>
-                <h1 id="logo2" style="color: rgb(53, 53, 53)">FUTURE</h1><br>
-                <h1 id="logo3" style="color:rgb(103, 245, 133)">ROAD</h1><br>
-
-            </div>
-        </section>
+        
 
 
         <div class="more-stuff-grid">
-            <figure class="swing">
+            <div id="item1">
+            <figure class="swing" >
                 <img src="images/major.jpg" alt="" class="side-in from-left" id="moveimg1">
             </figure>
-            <p class="side-in from-right" id="movep">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aspernatur explicabo consequatur alias natus itaque suscipit. Aliquid libero ipsum ex non distinctio.
+                    Laudantium pariatur, reprehenderit quidem unde aliquam aperiam autem molestiae!</p>
+            
+        </div>
+        <div id="item2">
+            <figure class="swing" >
+                <img src="images/exam-paper.jpg" alt="" class="" class="side-in from-right" id="moveimg">
+            </figure>
+            <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Aspernatur explicabo consequatur alias natus itaque suscipit. Aliquid libero ipsum ex non distinctio.
                 Laudantium pariatur, reprehenderit quidem unde aliquam aperiam autem molestiae!</p>
         </div>
-        <div class="more-stuff-grid">
-            <figure class="swing" id="sp">
-                <img src="images/exam-paper.jpg" alt="" class="" class="side-in from-right" id="moveimg">
-            </figure>
-            <p class="side-in from-left" id="movep1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                esse itaque laboriosam expedita vero porro modi aliquam totam impedit cumque alias eveniet quam vel
-                fugit et rem dolor, obcaecati odit!</p>
+        
         </div>
 
 <div class="mychart">
@@ -78,12 +76,7 @@
 
     </main>
     
-    <script src="js/scroll.js"></script>
-    <script type="text/javascript">
-        ScrollOut({
-            targets: 'h1'
-        })
-    </script>
+    
     <script src="js/home-app.js"></script>
     <footer>
         <p>Copyright © 2010 by Wily E. Coyote
