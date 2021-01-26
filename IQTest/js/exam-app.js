@@ -54,7 +54,6 @@ new theQuestion('memorize', 'When did World War 1 end?', [1917, 1923, 1918, 1920
 new theQuestion('memorize', 'What is the capital of Iran?', ['Addis Ababa', 'Kabul', 'Hanoi', 'Tehran'], 'Tehran');
 
 var doc=document.getElementById("container");
-doc.style.display='none';
 // add Question to the HTML
 function addQustion(qustion) {
     var theName=document.getElementById("name");
@@ -98,7 +97,7 @@ function theExam(event) {
             }
         }
         if (qustionCounter == allQustion.length) {
-            document.getElementById('next').value = 'The Result';
+            document.getElementById('next').value = 'The Result =>';
             form.addEventListener('submit', theResult);
             form.removeEventListener('submit', next);
         }
@@ -114,7 +113,6 @@ function theExam(event) {
 
     function theResult(event) {
         event.preventDefault();
-        doc.style.display='none';
         var results;
         var iq = 0;
         var mem = 0;
@@ -132,13 +130,13 @@ function theExam(event) {
         }
         var re=document.getElementById('result');
         if(12 <=iq){
-            re.textContent='You have a special way of thinking and analyzing, we advise you to choose a major that needs a lot of logic. For example, Engineer, Mathematical, and IT. Wish you the best of luck!.';
+            re.textContent='The Result: You have a special way of thinking and analyzing, we advise you to choose a major that needs a lot of logic. For example, Engineer, Mathematical, and IT. Wish you the best of luck!.';
         }
         else if(12 <= mem){
-            re.textContent='You have a special way to keep memorize things, impressive! we advise you to choose one of these: literature, history, and Geography.Wish you the best of luck!.';
+            re.textContent='The Result: You have a special way to keep memorize things, impressive! we advise you to choose one of these: literature, history, and Geography.Wish you the best of luck!.';
         }
         else{
-            re.textContent='Good job, we advise you to try the Fine arts, press, and media.';
+            re.textContent='The Result: Good job, we advise you to try the Fine arts, press, and media.';
         }
     }
 
