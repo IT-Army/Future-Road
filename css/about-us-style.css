@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: 0;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+header {
+    background-image:  url("../images/back.jpg");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px;
+}
+header div {
+  transform: translate(-40px, 100px);
+}
+#nav {
+    padding-top: 30px;
+}
+#navim {
+    height: 100px;
+    width: 100px;
+    transform: translate(40px, 40px);
+}
+.nav{
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    font-size: 30px;
+    display: inline;
+    margin: 30px;  
+}
+ul {
+   margin-left: 250px;
+}
+li a:hover {
+    color: #ffa500;
+}
+#introduction{
+    text-align: center;
+    transform: translate(-300px, 200px);
+}
+#introduction h1{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-size: 8em;
+    text-transform: uppercase;
+}
+#introduction h1 span{
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+    
+}
+#introduction h1:hover span{
+    transform: rotate(190deg) translate(5px,0);
+    transition-delay: 0.6s;
+}
+#introduction h1 span::before{
+    content: '';
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    height: 1000px;
+    width: 10px;
+    background: black;
+    border-left: 24px solid #ffa500;
+    border-right: 24px solid #561206;
+    box-shadow: 0 0 0 5px black;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 0.8s;
+}
+#introduction h1:hover span::before{
+    transform: scaleY(1);
+}
+#main{
+    display: grid;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .tt {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  #all{
+    transform: translateY(200px);
+    display: inline-block;
+    margin-left: 50px;
+  }
+  .card img {
+      height: 280px;
+  }
+  footer{
+    background-image: url(../images/backfoot.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 0 10px;
+    margin-top: 40vh;
+}
+
+#footerP{
+  display: inline;
+  text-align: center;
+  color: white;
+  font-size: large;
+  }
+i{
+  font-size: 30px;
+  color:#ffeebb;
+  padding: 10px;
+  transform: translate(300px, 100px);
+}
+i:hover{
+  color: orange;
+}
