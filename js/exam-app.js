@@ -11,7 +11,13 @@ function theQuestion(name, text, option, result) {
     this.result = result;
     allQustion.push(this);
 }
-// Craete Objects and putting the data 
+// Craete Objects and putting the data
+new theQuestion('IQ', 'Which is the odd one out?', ['ROOSTER', 'BUCK', 'GANDER', 'PEN'], 'PEN');
+new theQuestion('IQ', 'What is the value of x? 64 – 12 × 2 + 6 ÷ 3 = x', [50, 40, 42, 52], 42);
+new theQuestion('memorize', 'When did World War 1 end?', [1917, 1923, 1918, 1920], 1918);
+new theQuestion('memorize', 'What is the capital of Vietnam?', ['Buenos Aires', 'Addis Ababa', 'Kabul', 'Hanoi'], 'Hanoi');
+/*
+
 new theQuestion('IQ', 'What word means the same as the word in capitals? FORTE', ['endowment', 'conduct', 'talent', 'redoubt', 'style'], 'Talent');
 new theQuestion('IQ', 'What number comes next in this sequence: 25, 32, 27, 36?', [7, 17, 37, 27], 27);
 new theQuestion('IQ', 'What number should replace the question mark? 926 : 24 / 799 : 72 / 956 : ?', [60, 51, 81, 20], 51);
@@ -51,7 +57,7 @@ new theQuestion('memorize', 'Where is the Taj Mahal located?', ['India', 'Lima',
 new theQuestion('memorize', 'When did the Arab Revolt happen?', [1922, 1920, 1916, 1918], 1916);
 new theQuestion('memorize', 'What is the capital of Russia?', ['Buenos Aires', 'Addis Ababa', 'Lima', 'Moscow'], 'Moscow');
 new theQuestion('memorize', 'When did World War 1 end?', [1917, 1923, 1918, 1920], 1918);
-new theQuestion('memorize', 'What is the capital of Iran?', ['Addis Ababa', 'Kabul', 'Hanoi', 'Tehran'], 'Tehran');
+new theQuestion('memorize', 'What is the capital of Iran?', ['Addis Ababa', 'Kabul', 'Hanoi', 'Tehran'], 'Tehran');*/
 
 var doc=document.getElementById("container");
 // add Question to the HTML
