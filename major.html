@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Majors</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/major-style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet" />
 </head>
+
+
 <body>
-    
+    <header>
+
+        <img id="navim" src="images/logo.png" alt="">
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="major.html">Majors</a></li>
+                <li><a href="exam.html">Exam</a></li>
+                <li><a href="about-us-index.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <p id="p1">The</p>
+        <p id="p2">Future</p>
+        <p id="p3">depends on what</p>
+        <p id="p4">we do in the</p>
+        <!-- <p id="p5">in the</p> -->
+        <p id="p5">Present</p>
+        <p id="p6">Mahatma Gandhi</p>
+
+    </header>
+    <main>
+
+        <div id="videoDiv">
+
+            <iframe id="video" width="900px" height="500px" src="https://www.youtube.com/embed/MSjPW4ZMtus"
+                frameborder="0" allow="accelerometer" autoplay allowfullscreen></iframe>
+        </div>
+
+
+        <div id="titlesDiv">
+            <div id="engineerDiv">
+                <img src="images/engineericon2.svg" alt="">
+                <p>Engineering</p>
+            </div>
+
+            <div id="medicineDiv">
+                <img src="images/medicineicon.svg" alt="">
+                <p>Medicine</p>
+            </div>
+
+            <div id="itDiv">
+                <img src="images/technologyicon.svg" alt="">
+                <p>Technology</p>
+            </div>
+
+            <div id="lawDiv">
+                <img src="images/lawicon.svg" alt="">
+                <p>Law</p>
+            </div>
+
+            <div id="sportDiv">
+                <img src="images/sportsicon.svg" alt="">
+                <p>Sports</p>
+            </div>
+
+            <div id="lanDiv">
+                <img src="images/languages.svg" alt="">
+                <p>Languages</p>
+            </div>
+
+            <div id="accDiv">
+                <img src="images/accicon.svg" alt="">
+                <p>Accounting</p>
+            </div>
+
+
+            <div id="geoDiv">
+                <img src="images/geoicon.svg" alt="">
+                <p>Geography</p>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div id="chartDiv" class="mychart">
+            <canvas class="mychart" id="mychart"></canvas>
+        </div>
+
+        <img id="gif" src="images/giphy(1).gif" alt="">
+       
+        
+    </main>
+    <footer>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-youtube-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <p id="footerP">Copyright ©2021 All rights reserved | Students Future Road</p>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="js/major-app.js"></script>
 </body>
+
 </html>

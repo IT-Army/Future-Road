@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 header {
-    background-image:  url("../images/back.jpg");
+    background-image:  url("../images/bg1.jpeg");
     width: 100%;
-    height: 100vh;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 10px;
@@ -21,42 +21,53 @@ header div {
 .nav{
     display: inline-block;
 }
+
 #p1 {
     margin-left: 400px;
-    font-size: 40px;
+    font-size: 60px;
     margin-top:50px;
     font-family: 'Acme', sans-serif;
+    display: inline;
 }
 #p2 {
-    margin-left: 340px;
-    font-size: 80px;
+    margin-left: 30px;
+    font-size: 30px;
     font-family: 'Acme', sans-serif;
+    display: inline;
 }
+
 #p3 {
-   font-size: 40px;
-    margin-left: 360px;
-    font-family: 'Acme', sans-serif;
+  margin-left: 400px;
+  font-size: 60px;
+  margin-top:50px;
+  font-family: 'Acme', sans-serif;
+  display: inline;
 }
-#p4 {
-    font-size: 40px;
-    margin-left: 360px;
-    font-family: 'Acme', sans-serif;
+#p4{
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: 'Acme', sans-serif;
+  display: inline;
 }
+
 #p5 {
-    font-size: 40px;
-    margin-left: 400px;
-    font-family: 'Acme', sans-serif;
+  margin-left: 400px;
+  font-size: 60px;
+  margin-top:50px;
+  font-family: 'Acme', sans-serif;
+  display: inline;
 }
 #p6 {
-    font-size: 80px ;
-    margin-left: 330px;
-    font-family: 'Acme', sans-serif;
+  margin-left: 30px;
+  font-size: 30px;
+  font-family: 'Acme', sans-serif;
+  display: inline;
 }
-#p7 {
-    margin-left: 450px ;
-    font-size: 25px;
-    font-family: 'Acme', sans-serif;
-}
+
+
+
+
+
 a {
     text-decoration: none;
     color: white;
@@ -86,12 +97,33 @@ body{
 .more-stuff-grid{
     transform: translateY(5%);
     text-align: center;
+} 
+
+#div1 {
+  height: 450px;
 }
+
+#div2 {
+  height: 470px;
+}
+
+#click1{
+  transform: translate(-70px,-300px);
+
+}
+
+#click2 {
+  transform: translate(-70px , -215px);
+}
+
+
 .more-stuff-grid h2{
   color: #ffa500;
-  transform: translate(20px,-200px);
+  
   font-size: 30px;
 }
+
+
 .more-stuff-grid h1::before{
   content: '';
   background-color:gray;
@@ -111,7 +143,7 @@ body{
     margin: auto;
     font-size: 30px;
     font-family: 'Acme', sans-serif;
-    transform: translate(70px,-300px);
+    transform: translate(180px,-330px);
     
 }
 .more-stuff-grid div{
@@ -127,12 +159,12 @@ figure {
     width: 400px;
     filter: grayscale(.8);
     transform: translateX(60px);
-  }
-  figure img{
+}
+figure img{
     width: 400px;
     height: 400px;
-  }
-  figure::before {
+}
+figure::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -145,14 +177,14 @@ figure {
     border-radius: 100%;
     transform: translate(-50%, -50%);
     opacity: 0;
-  }
-  figure:hover{
+}
+figure:hover{
     animation: bloom ease-in-out .75s forwards;
-  }
-  figure:hover::before {
+}
+figure:hover::before {
     animation: circle .75s;
-  }
-  @keyframes bloom {
+}
+@keyframes bloom {
     0% {
       filter: grayscale(.8);
     }
@@ -162,8 +194,8 @@ figure {
     100% {
       filter: grayscale(0);
     }
-  }
-  @keyframes circle {
+}
+@keyframes circle {
     0% {
       opacity: .5;
       background: rgba(213,156,34,.2);
@@ -178,32 +210,6 @@ figure {
       height: 100%;
       opacity: 0;
     }
-  }
-footer{
-    background-image: url(../images/backfoot.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 20vh;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-shadow: 0 0 10px;
-}
-
-#footerP{
-  display: inline;
-  text-align: center;
-  color: white;
-  font-size: large;
-  }
-i{
-  font-size: 30px;
-  color:#ffeebb;
-  padding: 10px;
-  transform: translate(300px, 100px);
-}
-i:hover{
-  color: orange;
 }
 
 #repeat1{
@@ -221,6 +227,29 @@ i:hover{
 }
 #tit h1{
   font-size: 60px;
-  transform: translateY(-350px);
+  transform: translate(140px , -350px);
   font-family: 'Acme', sans-serif;
+}
+footer {
+  /* margin-top: 100px; */
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(
+     90deg,
+     black 0%,
+   grey 100%);
+}
+#footerP{
+  display: inline;
+  text-align: center;
+  color: white;
+  font-size: large;
+  margin-left:150px ;}
+i{
+  font-size: 30px;
+  color:#ffeebb;
+  padding: 10px;
+}
+i:hover{
+  color: orange;
 }
