@@ -55,25 +55,25 @@ li a:hover {
 }
 #p3 {
    font-size: 40px;
-    margin-left: 360px;
+    margin-left: 310px;
     font-family: 'Acme', sans-serif;
 }
 #p4 {
     font-size: 40px;
-    margin-left: 360px;
+    margin-left: 350px;
     font-family: 'Acme', sans-serif;
 }
-#p5 {
+/* #p5 {
     font-size: 40px;
     margin-left: 400px;
     font-family: 'Acme', sans-serif;
-}
-#p6 {
+} */
+#p5 {
     font-size: 80px ;
     margin-left: 330px;
     font-family: 'Acme', sans-serif;
 }
-#p7 {
+#p6 {
     margin-left: 450px ;
     font-size: 25px;
     font-family: 'Acme', sans-serif;
