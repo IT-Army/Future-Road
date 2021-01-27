@@ -10,10 +10,11 @@ header {
 #nav {
   display: inline-block;
   padding-top: 30px;
-    transform: translateY(-50%);
+ margin-left: -50px;
 }
 #logo{
-  padding: 20px;
+ 
+  transform: translate(40px, 40px);
 }
 #p1 {
   margin-left: 400px;
@@ -41,7 +42,7 @@ li a:hover {
   
 }
 
-body
+main 
 {
     font-family: 'Lobster', cursive;
 }
@@ -190,7 +191,7 @@ footer {
   text-align: center;
   color: white;
   font-size: large;
-  margin-left:150px ;}
+  margin-left:400px ;}
 i{
   font-size: 30px;
   color:#ffeebb;

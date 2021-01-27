@@ -23,6 +23,7 @@ transform: translate(-40px, 100px);
 }
 #nav {
   padding-top: 30px;
+  margin-left: -50px;
 }
 #navim {
   height: 100px;
@@ -57,7 +58,7 @@ li a:hover {
   position: relative;
   margin: 0;
   padding: 0;
- 
+  color: white;
   font-size: 8em;
   text-transform: uppercase;
 }
@@ -65,6 +66,7 @@ li a:hover {
   position: relative;
   display: inline-block;
   transition: 1s;
+
   
 }
 #introduction h1:hover span{
@@ -78,7 +80,7 @@ li a:hover {
   left: 10px;
   height: 380px;
   width: 10px;
-  background: black;
+  background:black;
   border-left: 24px solid #ffa500;
   border-right: 24px solid #561206;
   box-shadow: 0 0 0 5px black;
@@ -195,7 +197,7 @@ footer {
   text-align: center;
   color: white;
   font-size: large;
-  margin-left:150px ;}
+  margin-left:400px ;}
 i{
   font-size: 30px;
   color:#ffeebb;

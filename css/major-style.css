@@ -18,7 +18,8 @@ header {
 
 #nav {
     display: inline-block ;
-    transform: translateY(-20px);
+    /* transform: translateY(-20px); */
+    padding-top: 30px;
 }
 
 a {
@@ -63,11 +64,7 @@ li a:hover {
     margin-left: 350px;
     font-family: 'Acme', sans-serif;
 }
-/* #p5 {
-    font-size: 40px;
-    margin-left: 400px;
-    font-family: 'Acme', sans-serif;
-} */
+
 #p5 {
     font-size: 80px ;
     margin-left: 330px;
@@ -180,8 +177,7 @@ footer {
 
 #footerP{
     display: inline;
-    margin-left: 300px;
-    text-align: center;
+    margin-left: 400px;
      color: white;
      font-size: large;
     padding-top: 15px;
