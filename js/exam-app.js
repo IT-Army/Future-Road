@@ -103,7 +103,7 @@ function theExam(event) {
             }
         }
         if (qustionCounter == allQustion.length) {
-            document.getElementById('next').value = 'The Result =>';
+            document.getElementById('next').value = 'The Result';
             form.addEventListener('submit', theResult);
             form.removeEventListener('submit', next);
         }

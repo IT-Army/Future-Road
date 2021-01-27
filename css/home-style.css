@@ -13,6 +13,7 @@ header div {
 #nav {
     padding-top: 30px;
     margin-left: -50px;
+  
 }
 #navim {
     height: 100px;
@@ -20,7 +21,13 @@ header div {
     transform: translate(40px, 40px);
 }
 .nav{
-    display: inline-block;
+  display: inline-block;
+}
+
+#sayingDiv{
+  color: #561206;
+  
+  text-shadow: 0 0 20px white;
 }
 
 #p1 {
@@ -109,17 +116,17 @@ body{
 }
 
 #click1{
-  transform: translate(-70px,-300px);
+  transform: translate(-580px,-430px);
 
 }
 
 #click2 {
-  transform: translate(-70px , -215px);
+  transform: translate(-580px,-290px);
 }
 
 
 .more-stuff-grid h2{
-  color: #ffa500;
+  color: #561206;
   
   font-size: 30px;
 }
@@ -135,16 +142,15 @@ body{
 .more-stuff-grid img{
     height: 400px;
     width: 400px;
-    
-    
-
+  
 }
 .more-stuff-grid p{
     max-width: 50%;
     margin: auto;
     font-size: 30px;
     font-family: 'Acme', sans-serif;
-    transform: translate(180px,-330px);
+    transform: translate(180px,-375px);
+    line-height: 1.6;
     
 }
 .more-stuff-grid div{
@@ -228,17 +234,16 @@ figure:hover::before {
 }
 #tit h1{
   font-size: 60px;
-  transform: translate(140px , -350px);
+  transform: translate(140px , -380px);
   font-family: 'Acme', sans-serif;
 }
 footer {
  
   width: 100%;
   height: 50px;
-  background: linear-gradient(
-     90deg,
-     black 0%,
-   grey 100%);
+  /* background-color: #501005; */
+  background-color: #3f271f;
+
 }
 #footerP{
   display: inline;
