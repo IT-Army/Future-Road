@@ -103,7 +103,7 @@ function theExam(event) {
             }
         }
         if (qustionCounter == allQustion.length) {
-            document.getElementById('next').value = 'The Result';
+            document.getElementById('next').value = 'Result';
             form.addEventListener('submit', theResult);
             form.removeEventListener('submit', next);
         }
@@ -113,7 +113,7 @@ function theExam(event) {
             addQustion(qustion);
         }
         if (qustionCounter == allQustion.length - 1) {
-            document.getElementById('next').value = 'The End';
+            document.getElementById('next').value = 'End';
         }
     }
 

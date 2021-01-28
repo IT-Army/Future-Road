@@ -101,9 +101,9 @@ main
 }
 
 .con{
-font-size: 18px;
+font-size: 20px;
   color: white;
-  padding: 40px 20px 0px 20px;
+  padding: 20px;
   text-align: center;
   line-height: 1.8;
   height: 400px;
@@ -172,9 +172,10 @@ text-align: center;
 {
   color:goldenrod;
   font-size: 20px;
-  line-height: 2;
+  font-weight: bolder;
+  line-height: 1.5;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 15px 20px;
 }
 
 .text{
@@ -236,5 +237,28 @@ i:hover{
 	position:relative;
 	top:1px;
 }
-
+/* label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+} */
  
