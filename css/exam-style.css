@@ -77,6 +77,13 @@ main
   float: right;
   width: 100px;
   height: 50px;
+  background-color: #54381e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 .imges{
   width: 100px;
@@ -187,16 +194,17 @@ text-align: center;
 footer {
   margin-top: 60px;
   width: 100%;
-  height: 50px;
+  height: 90px;
   /* background-color: #501005; */
   background-color: #3f271f;
+  text-align: center;
 }
 #footerP{
-  display: inline;
-  text-align: center;
+ 
   color: white;
   font-size: large;
-  margin-left:400px ;}
+ 
+}
 i{
   font-size: 30px;
   color:#ffeebb;
@@ -205,3 +213,28 @@ i{
 i:hover{
   color: orange;
 }
+#st{
+  box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:3px;
+	border:1px solid #54381e;
+
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+#st:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+#st:active {
+	position:relative;
+	top:1px;
+}
+
+ 
